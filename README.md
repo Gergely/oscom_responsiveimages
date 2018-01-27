@@ -10,7 +10,7 @@ W3C HTML5 standard real `<picture>` adaptation for oscommerce project
 | Project       | Start Date    | End   |
 | ------------- |:-------------:| -----:|
 | Initate github page | 2018-01-27 | :heavy_check_mark: |
-| Research for php script | 2018-01-27 | :soon: |
+| Research for php script | 2018-01-27 | :heavy_check_mark: |
 | Rewrite v2.3 tep_image function first | 2018-01-27 | :soon: |
 
 
@@ -21,10 +21,22 @@ W3C HTML5 standard real `<picture>` adaptation for oscommerce project
 
 Note: cache directory will be created automaticaly
 
-Sources:
-https://github.com/osCommerce/oscommerce2
+## PHP Script Usage in HTML
+```html
+<picture>
+  <source media="(max-width: 640px)" srcset="<?= "resize.php?file=maxresdefault.png&size=640"; ?>">
+  <source media="(max-width: 768px)" srcset="<?= "resize.php?file=maxresdefault.png&size=768";?>">
+  <source media="(max-width: 1080px)" srcset="<?= "resize.php?file=maxresdefault.png&size=1080"; ?>">
+  <source media="(max-width: 1280px)" srcset="<?= "resize.php?file=maxresdefault.png&size=1280"; ?>">
+  <source media="(max-width: 1440px)" srcset="<?= "resize.php?file=maxresdefault.png&size=1440"; ?>">
+  <img class="img-responsive" src="images/maxresdefault.png" alt="Full HD Example Picture">
+</picture>
+```
 
-https://responsiveimages.org/
+## Sources:
+1. https://github.com/osCommerce/oscommerce2
 
-Support:
+2. https://responsiveimages.org/
+
+## Support:
 https://forums.oscommerce.com
