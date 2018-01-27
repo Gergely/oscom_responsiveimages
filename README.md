@@ -13,8 +13,17 @@ W3C HTML5 standard real `<picture>` adaptation for oscommerce project
 | Research for php script | 2018-01-27 | :soon: |
 | Rewrite v2.3 tep_image function first | 2018-01-27 | :soon: |
 
+
+## Testing instructions
+1. download zip file
+2. unzip your catalog on desktop enviroment or upload package on live web server
+3. open example.php in web browser
+
+Note: cache directory will be created automaticaly
+
 Sources:
 https://github.com/osCommerce/oscommerce2
+
 https://responsiveimages.org/
 
 Support:
