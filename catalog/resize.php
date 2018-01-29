@@ -9,12 +9,12 @@
 $imagedir = "images";
 $cachedir = "images/cache"; // relative or absolute path
 
-$size = $_GET['size'];
-$file = $_GET['file'];
+$size = (int)$_GET['size'];
+$file = basename($_GET['file']);
 
 if (is_numeric($size) && (int)$size !== 0) {
 
-  $thumbWidth = (int)$size;
+  $thumbWidth = $size;
   $thumbHeight = null;
 
   $original = $imagedir . "/" . $file;

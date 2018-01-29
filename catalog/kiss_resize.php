@@ -7,8 +7,8 @@
 
 define('DIR_WS_MODULES', 'includes/modules/');
 
-$size = $_GET['size'];
-$file = $_GET['file'];
+$size = (int)$_GET['size'];
+$file = basename($_GET['file']);
 
 // Configuration section
 $imagedir = "images";
